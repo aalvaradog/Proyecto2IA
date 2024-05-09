@@ -8,3 +8,99 @@ Epoch: 6  Train Loss: 0.0478  Train Acc: 98.1408  Valid Loss: 0.6842  Valid Acc:
 Epoch: 7  Train Loss: 0.0217  Train Acc: 99.2032  Valid Loss: 1.0134  Valid Acc: 86.8687
 Epoch: 8  Train Loss: 0.0767  Train Acc: 97.2112  Valid Loss: 0.6769  Valid Acc: 83.8384
 Epoch: 9  Train Loss: 0.0166  Train Acc: 99.3360  Valid Loss: 0.8481  Valid Acc: 86.6162
+Epoch: 10  Train Loss: 0.0073  Train Acc: 99.8008  Valid Loss: 0.9391  Valid Acc: 87.3737
+Is Torch Cuda Available? True
+Total samples: 1506
+Batch size: 32
+Number of batches per epoch: 48
+After conv1: torch.Size([32, 16, 130, 130])
+After Pooling 1: torch.Size([32, 16, 65, 65])
+After conv2: torch.Size([32, 64, 65, 65])
+After Pooling 2: torch.Size([32, 64, 32, 32])
+After conv3: torch.Size([32, 128, 32, 32])
+After Pooling 3: torch.Size([32, 128, 16, 16])
+Tensor 2D: torch.Size([32, 32768])
+After conv1: torch.Size([32, 16, 130, 130])
+After Pooling 1: torch.Size([32, 16, 65, 65])
+After conv2: torch.Size([32, 64, 65, 65])
+After Pooling 2: torch.Size([32, 64, 32, 32])
+After conv3: torch.Size([32, 128, 32, 32])
+After Pooling 3: torch.Size([32, 128, 16, 16])
+Tensor 2D: torch.Size([32, 32768])
+Total samples: 1506
+Batch size: 32
+Number of batches per epoch: 48
+After conv1: torch.Size([32, 16, 130, 130])
+After Pooling 1: torch.Size([32, 16, 65, 65])
+After conv2: torch.Size([32, 64, 65, 65])
+After Pooling 2: torch.Size([32, 64, 32, 32])
+After conv3: torch.Size([32, 128, 32, 32])
+After Pooling 3: torch.Size([32, 128, 16, 16])
+Tensor 2D: torch.Size([32, 32768])
+Total samples: 1506
+Batch size: 32
+Number of batches per epoch: 48
+After conv1: torch.Size([32, 16, 130, 130])
+After Pooling 1: torch.Size([32, 16, 65, 65])
+After conv2: torch.Size([32, 64, 65, 65])
+After Pooling 2: torch.Size([32, 64, 32, 32])
+After conv3: torch.Size([32, 128, 32, 32])
+After Pooling 3: torch.Size([32, 128, 16, 16])
+Tensor 2D: torch.Size([32, 32768])
+F1 torch.Size([32, 512])
+Total samples: 1506
+Batch size: 32
+Number of batches per epoch: 48
+Total samples: 1506
+Batch size: 32
+Number of batches per epoch: 48
+After conv1: torch.Size([32, 16, 130, 130])
+After Pooling 1: torch.Size([32, 16, 65, 65])
+After conv2: torch.Size([32, 64, 65, 65])
+After Pooling 2: torch.Size([32, 64, 32, 32])
+After conv3: torch.Size([32, 128, 32, 32])
+After Pooling 3: torch.Size([32, 128, 16, 16])
+Tensor 2D: torch.Size([32, 32768])
+F1 torch.Size([32, 512])
+After conv1: torch.Size([32, 16, 130, 130])
+After Pooling 1: torch.Size([32, 16, 65, 65])
+After conv2: torch.Size([32, 64, 65, 65])
+After Pooling 2: torch.Size([32, 64, 32, 32])
+After conv3: torch.Size([32, 128, 32, 32])
+After Pooling 3: torch.Size([32, 128, 16, 16])
+Tensor 2D: torch.Size([32, 32768])
+F1 torch.Size([32, 512])
+After conv1: torch.Size([32, 16, 130, 130])
+After Pooling 1: torch.Size([32, 16, 65, 65])
+After conv2: torch.Size([32, 64, 65, 65])
+After Pooling 2: torch.Size([32, 64, 32, 32])
+After conv3: torch.Size([32, 128, 32, 32])
+After Pooling 3: torch.Size([32, 128, 16, 16])
+Tensor 2D: torch.Size([32, 32768])
+F1 torch.Size([32, 512])
+After conv1: torch.Size([32, 16, 130, 130])
+After Pooling 1: torch.Size([32, 16, 65, 65])
+After conv2: torch.Size([32, 64, 65, 65])
+After Pooling 2: torch.Size([32, 64, 32, 32])
+After conv3: torch.Size([32, 128, 32, 32])
+After Pooling 3: torch.Size([32, 128, 16, 16])
+Tensor 2D: torch.Size([32, 32768])
+F1 torch.Size([32, 512])
+After conv1: torch.Size([32, 16, 130, 130])
+After Pooling 1: torch.Size([32, 16, 65, 65])
+After conv2: torch.Size([32, 64, 65, 65])
+After Pooling 2: torch.Size([32, 64, 32, 32])
+After conv3: torch.Size([32, 128, 32, 32])
+After Pooling 3: torch.Size([32, 128, 16, 16])
+Tensor 2D: torch.Size([32, 32768])
+F1 torch.Size([32, 512])
+Total samples: 1506
+Batch size: 32
+Number of batches per epoch: 48
+After conv1: torch.Size([32, 16, 130, 130])
+After Pooling 1: torch.Size([32, 16, 65, 65])
+After conv2: torch.Size([32, 64, 65, 65])
+After Pooling 2: torch.Size([32, 64, 32, 32])
+After conv3: torch.Size([32, 128, 32, 32])
+After Pooling 3: torch.Size([32, 128, 16, 16])
+Tensor 2D: torch.Size([32, 32768])
