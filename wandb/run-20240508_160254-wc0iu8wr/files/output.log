@@ -1,0 +1,15 @@
+
+Epoch: 1  Train Loss: 0.5263  Train Acc: 79.2829  Valid Loss: 0.6277  Valid Acc: 77.5253
+Epoch: 2  Train Loss: 0.2092  Train Acc: 91.5007  Valid Loss: 0.5163  Valid Acc: 81.8182
+Epoch: 3  Train Loss: 0.1361  Train Acc: 95.2191  Valid Loss: 0.4683  Valid Acc: 81.3131
+Epoch: 4  Train Loss: 0.1272  Train Acc: 94.8207  Valid Loss: 0.5824  Valid Acc: 78.7879
+Epoch: 5  Train Loss: 0.0653  Train Acc: 97.6760  Valid Loss: 0.5917  Valid Acc: 87.6263
+Epoch: 6  Train Loss: 0.0399  Train Acc: 98.5392  Valid Loss: 0.5361  Valid Acc: 85.6061
+Epoch: 7  Train Loss: 0.0315  Train Acc: 98.8048  Valid Loss: 0.4386  Valid Acc: 87.1212
+Epoch: 8  Train Loss: 0.0418  Train Acc: 98.4728  Valid Loss: 0.4072  Valid Acc: 87.1212
+Epoch: 9  Train Loss: 0.0050  Train Acc: 99.8672  Valid Loss: 0.4498  Valid Acc: 89.3939
+Epoch: 10  Train Loss: 0.0314  Train Acc: 99.0040  Valid Loss: 0.4451  Valid Acc: 88.3838
+Is Torch Cuda Available? True
+Total samples: 1506
+Batch size: 32
+Number of batches per epoch: 48

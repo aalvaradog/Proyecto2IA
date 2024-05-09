@@ -1,0 +1,774 @@
+2024-05-08 17:25:16,356 INFO    StreamThr :18244 [internal.py:wandb_internal():86] W&B internal server running at pid: 18244, started at: 2024-05-08 17:25:16.355663
+2024-05-08 17:25:16,357 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status
+2024-05-08 17:25:16,358 INFO    WriterThread:18244 [datastore.py:open_for_write():87] open: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\run-r6ug24l1.wandb
+2024-05-08 17:25:16,359 DEBUG   SenderThread:18244 [sender.py:send():379] send: header
+2024-05-08 17:25:16,359 DEBUG   SenderThread:18244 [sender.py:send():379] send: run
+2024-05-08 17:25:16,965 INFO    SenderThread:18244 [dir_watcher.py:__init__():211] watching files in: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files
+2024-05-08 17:25:16,965 INFO    SenderThread:18244 [sender.py:_start_run_threads():1124] run started: r6ug24l1 with start time 1715210715.843486
+2024-05-08 17:25:16,975 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: check_version
+2024-05-08 17:25:16,975 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: check_version
+2024-05-08 17:25:17,727 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: run_start
+2024-05-08 17:25:17,734 DEBUG   HandlerThread:18244 [system_info.py:__init__():26] System info init
+2024-05-08 17:25:17,734 DEBUG   HandlerThread:18244 [system_info.py:__init__():41] System info init done
+2024-05-08 17:25:17,734 INFO    HandlerThread:18244 [system_monitor.py:start():194] Starting system monitor
+2024-05-08 17:25:17,734 INFO    SystemMonitor:18244 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-05-08 17:25:17,734 INFO    HandlerThread:18244 [system_monitor.py:probe():214] Collecting system info
+2024-05-08 17:25:17,740 INFO    SystemMonitor:18244 [interfaces.py:start():190] Started cpu monitoring
+2024-05-08 17:25:17,740 DEBUG   HandlerThread:18244 [system_info.py:probe():150] Probing system
+2024-05-08 17:25:17,740 DEBUG   HandlerThread:18244 [system_info.py:probe():198] Probing system done
+2024-05-08 17:25:17,740 DEBUG   HandlerThread:18244 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.19045-SP0', 'python': '3.12.3', 'heartbeatAt': '2024-05-08T23:25:17.740962', 'startedAt': '2024-05-08T23:25:10.571805', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '<python with no main file>', 'codePathLocal': None, 'host': 'DESKTOP-JUEHQSP', 'username': 'tian_', 'executable': 'c:\\Users\\tian_\\AppData\\Local\\anaconda3\\envs\\Pytorch_env\\python.exe', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 3401.0, 'min': 0.0, 'max': 3401.0}, 'cpu_freq_per_core': [{'current': 3401.0, 'min': 0.0, 'max': 3401.0}], 'disk': {}, 'gpu': 'NVIDIA GeForce RTX 4070 Ti', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4070 Ti', 'memory_total': 12878610432}], 'memory': {'total': 63.92293167114258}}
+2024-05-08 17:25:17,740 INFO    SystemMonitor:18244 [interfaces.py:start():190] Started disk monitoring
+2024-05-08 17:25:17,741 INFO    HandlerThread:18244 [system_monitor.py:probe():224] Finished collecting system info
+2024-05-08 17:25:17,741 INFO    HandlerThread:18244 [system_monitor.py:probe():227] Publishing system info
+2024-05-08 17:25:17,741 INFO    SystemMonitor:18244 [interfaces.py:start():190] Started gpu monitoring
+2024-05-08 17:25:17,741 DEBUG   HandlerThread:18244 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-05-08 17:25:17,741 INFO    SystemMonitor:18244 [interfaces.py:start():190] Started memory monitoring
+2024-05-08 17:25:17,748 INFO    SystemMonitor:18244 [interfaces.py:start():190] Started network monitoring
+2024-05-08 17:25:17,754 ERROR   HandlerThread:18244 [system_info.py:_save_conda():221] Error saving conda packages: [WinError 2] The system cannot find the file specified
+Traceback (most recent call last):
+  File "c:\Users\tian_\AppData\Local\anaconda3\envs\Pytorch_env\Lib\site-packages\wandb\sdk\internal\system\system_info.py", line 214, in _save_conda
+    subprocess.call(
+  File "c:\Users\tian_\AppData\Local\anaconda3\envs\Pytorch_env\Lib\subprocess.py", line 389, in call
+    with Popen(*popenargs, **kwargs) as p:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\tian_\AppData\Local\anaconda3\envs\Pytorch_env\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "c:\Users\tian_\AppData\Local\anaconda3\envs\Pytorch_env\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+2024-05-08 17:25:17,755 DEBUG   HandlerThread:18244 [system_info.py:_save_conda():222] Saving conda packages done
+2024-05-08 17:25:17,755 INFO    HandlerThread:18244 [system_monitor.py:probe():229] Finished publishing system info
+2024-05-08 17:25:17,756 DEBUG   SenderThread:18244 [sender.py:send():379] send: files
+2024-05-08 17:25:17,756 INFO    SenderThread:18244 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-05-08 17:25:17,911 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: python_packages
+2024-05-08 17:25:17,911 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:25:17,911 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:25:17,911 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: python_packages
+2024-05-08 17:25:17,913 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:25:17,974 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\wandb-metadata.json
+2024-05-08 17:25:17,974 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\conda-environment.yaml
+2024-05-08 17:25:17,974 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\requirements.txt
+2024-05-08 17:25:18,512 DEBUG   SenderThread:18244 [sender.py:send():379] send: telemetry
+2024-05-08 17:25:18,621 INFO    wandb-upload_0:18244 [upload_job.py:push():131] Uploaded file C:\Users\tian_\AppData\Local\Temp\tmpu9463rxrwandb\o20y2a8f-wandb-metadata.json
+2024-05-08 17:25:19,423 DEBUG   SenderThread:18244 [sender.py:send():379] send: telemetry
+2024-05-08 17:25:21,433 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:25:26,489 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:25:31,541 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:25:32,919 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:25:32,941 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:25:32,942 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:25:37,173 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:25:42,220 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:25:47,267 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:25:47,935 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:25:47,969 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:25:47,969 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:25:48,261 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\config.yaml
+2024-05-08 17:25:53,232 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:25:58,286 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:26:02,948 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:26:02,981 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:26:02,981 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:26:04,162 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:26:09,217 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:26:14,278 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:26:17,761 DEBUG   SystemMonitor:18244 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-05-08 17:26:17,762 DEBUG   SenderThread:18244 [sender.py:send():379] send: stats
+2024-05-08 17:26:17,951 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:26:17,984 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:26:17,984 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:26:20,111 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:26:25,143 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:26:30,187 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:26:32,964 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:26:32,992 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:26:32,993 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:26:36,149 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:26:41,193 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:26:46,258 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:26:47,679 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 17:26:47,680 DEBUG   SenderThread:18244 [sender.py:send():379] send: history
+2024-05-08 17:26:47,681 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 17:26:47,682 INFO    SenderThread:18244 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 17:26:47,682 DEBUG   SenderThread:18244 [sender.py:send():379] send: config
+2024-05-08 17:26:47,776 DEBUG   SenderThread:18244 [sender.py:send():379] send: stats
+2024-05-08 17:26:47,881 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\output.log
+2024-05-08 17:26:47,881 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\wandb-summary.json
+2024-05-08 17:26:47,975 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:26:47,991 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:26:47,991 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:26:48,189 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: log_artifact
+2024-05-08 17:26:48,189 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: log_artifact
+2024-05-08 17:26:48,201 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 17:26:48,890 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\media\table\confusion_matrix_table_1_5f855905de0434faa562.table.json
+2024-05-08 17:26:48,890 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\media\table
+2024-05-08 17:26:48,890 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\media
+2024-05-08 17:26:49,190 INFO    wandb-upload_0:18244 [upload_job.py:push():89] Uploaded file C:\Users\tian_\AppData\Local\wandb\wandb\artifacts\staging\tmp1blv9r4i
+2024-05-08 17:26:49,653 INFO    wandb-upload_1:18244 [upload_job.py:push():131] Uploaded file C:\Users\tian_\AppData\Local\Temp\tmpu9463rxrwandb\ip00tt1i-media/table/confusion_matrix_table_1_5f855905de0434faa562.table.json
+2024-05-08 17:26:49,842 INFO    SenderThread:18244 [sender.py:send_request_log_artifact():1456] logged artifact run-r6ug24l1-confusion_matrix_table - {'id': 'QXJ0aWZhY3Q6ODI4MTA5MzY0', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE3MjM0MTkwMg==', 'latestArtifact': None}}
+2024-05-08 17:26:49,842 DEBUG   SenderThread:18244 [sender.py:send():379] send: files
+2024-05-08 17:26:49,843 INFO    SenderThread:18244 [sender.py:_save_file():1390] saving file media\table\confusion_matrix_table_1_5f855905de0434faa562.table.json with policy now
+2024-05-08 17:26:49,901 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\output.log
+2024-05-08 17:26:50,295 INFO    wandb-upload_0:18244 [upload_job.py:push():131] Uploaded file C:\Users\tian_\AppData\Local\Temp\tmpu9463rxrwandb\2fx4lm58-media/table/confusion_matrix_table_1_5f855905de0434faa562.table.json
+2024-05-08 17:26:51,869 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:26:52,929 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\config.yaml
+2024-05-08 17:26:57,072 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:27:02,125 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:27:02,977 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:27:02,993 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:27:02,994 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:27:07,177 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:27:12,230 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:27:17,276 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:27:17,784 DEBUG   SenderThread:18244 [sender.py:send():379] send: stats
+2024-05-08 17:27:17,990 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:27:18,006 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:27:18,006 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:27:23,184 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:27:28,225 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:27:32,994 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:27:33,010 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:27:33,011 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:27:34,162 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:27:39,198 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:27:44,253 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:27:47,786 DEBUG   SenderThread:18244 [sender.py:send():379] send: stats
+2024-05-08 17:27:48,008 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:27:48,009 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:27:48,009 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:27:50,126 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:27:55,166 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:28:00,211 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:28:03,017 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:28:03,017 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:28:03,018 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:28:06,171 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:28:11,210 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:28:15,594 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 17:28:15,595 DEBUG   SenderThread:18244 [sender.py:send():379] send: history
+2024-05-08 17:28:15,595 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 17:28:15,596 INFO    SenderThread:18244 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 17:28:15,597 DEBUG   SenderThread:18244 [sender.py:send():379] send: config
+2024-05-08 17:28:15,742 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\wandb-summary.json
+2024-05-08 17:28:16,078 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: log_artifact
+2024-05-08 17:28:16,078 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: log_artifact
+2024-05-08 17:28:16,099 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 17:28:16,749 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\media\table\confusion_matrix_table_2_e3fb1294fe8daee83cf8.table.json
+2024-05-08 17:28:16,749 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\media\table
+2024-05-08 17:28:16,807 INFO    wandb-upload_1:18244 [upload_job.py:push():89] Uploaded file C:\Users\tian_\AppData\Local\wandb\wandb\artifacts\staging\tmpqhr8tgrf
+2024-05-08 17:28:17,105 INFO    wandb-upload_0:18244 [upload_job.py:push():131] Uploaded file C:\Users\tian_\AppData\Local\Temp\tmpu9463rxrwandb\iqhxrz1l-media/table/confusion_matrix_table_2_e3fb1294fe8daee83cf8.table.json
+2024-05-08 17:28:17,492 INFO    SenderThread:18244 [sender.py:send_request_log_artifact():1456] logged artifact run-r6ug24l1-confusion_matrix_table - {'id': 'QXJ0aWZhY3Q6ODI4MTEwNjA5', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE3MjM0MTkwMg==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6ODI4MTA5MzY0', 'versionIndex': 0}}}
+2024-05-08 17:28:17,493 DEBUG   SenderThread:18244 [sender.py:send():379] send: files
+2024-05-08 17:28:17,493 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:28:17,493 INFO    SenderThread:18244 [sender.py:_save_file():1390] saving file media\table\confusion_matrix_table_2_e3fb1294fe8daee83cf8.table.json with policy now
+2024-05-08 17:28:17,755 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\output.log
+2024-05-08 17:28:17,787 DEBUG   SenderThread:18244 [sender.py:send():379] send: stats
+2024-05-08 17:28:17,946 INFO    wandb-upload_1:18244 [upload_job.py:push():131] Uploaded file C:\Users\tian_\AppData\Local\Temp\tmpu9463rxrwandb\v7m1jw6c-media/table/confusion_matrix_table_2_e3fb1294fe8daee83cf8.table.json
+2024-05-08 17:28:18,005 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:28:18,023 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:28:18,023 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:28:23,231 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:28:28,296 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:28:28,881 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\config.yaml
+2024-05-08 17:28:33,010 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:28:33,047 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:28:33,047 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:28:34,236 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:28:39,286 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:28:44,313 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:28:47,789 DEBUG   SenderThread:18244 [sender.py:send():379] send: stats
+2024-05-08 17:28:48,010 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:28:48,042 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:28:48,042 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:28:50,249 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:28:55,279 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:29:00,324 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:29:03,014 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:29:03,045 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:29:03,045 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:29:06,261 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:29:11,288 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:29:16,321 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:29:17,796 DEBUG   SenderThread:18244 [sender.py:send():379] send: stats
+2024-05-08 17:29:18,016 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:29:18,064 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:29:18,064 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:29:22,315 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:29:27,335 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:29:32,386 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:29:33,031 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:29:33,063 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:29:33,063 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:29:38,228 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:29:43,284 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:29:44,234 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 17:29:44,235 DEBUG   SenderThread:18244 [sender.py:send():379] send: history
+2024-05-08 17:29:44,235 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 17:29:44,236 INFO    SenderThread:18244 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 17:29:44,237 DEBUG   SenderThread:18244 [sender.py:send():379] send: config
+2024-05-08 17:29:44,637 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\wandb-summary.json
+2024-05-08 17:29:44,766 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: log_artifact
+2024-05-08 17:29:44,767 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: log_artifact
+2024-05-08 17:29:44,778 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 17:29:45,549 INFO    wandb-upload_0:18244 [upload_job.py:push():89] Uploaded file C:\Users\tian_\AppData\Local\wandb\wandb\artifacts\staging\tmpd03vhp9j
+2024-05-08 17:29:45,646 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\media\table\confusion_matrix_table_3_13069f5b8396d1292f7f.table.json
+2024-05-08 17:29:45,646 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\media\table
+2024-05-08 17:29:46,177 INFO    SenderThread:18244 [sender.py:send_request_log_artifact():1456] logged artifact run-r6ug24l1-confusion_matrix_table - {'id': 'QXJ0aWZhY3Q6ODI4MTExNzQ2', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE3MjM0MTkwMg==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6ODI4MTEwNjA5', 'versionIndex': 1}}}
+2024-05-08 17:29:46,177 DEBUG   SenderThread:18244 [sender.py:send():379] send: files
+2024-05-08 17:29:46,177 INFO    SenderThread:18244 [sender.py:_save_file():1390] saving file media\table\confusion_matrix_table_3_13069f5b8396d1292f7f.table.json with policy now
+2024-05-08 17:29:46,559 INFO    wandb-upload_1:18244 [upload_job.py:push():131] Uploaded file C:\Users\tian_\AppData\Local\Temp\tmpu9463rxrwandb\oe9g2awl-media/table/confusion_matrix_table_3_13069f5b8396d1292f7f.table.json
+2024-05-08 17:29:46,648 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\output.log
+2024-05-08 17:29:46,987 INFO    wandb-upload_0:18244 [upload_job.py:push():131] Uploaded file C:\Users\tian_\AppData\Local\Temp\tmpu9463rxrwandb\rzdqqhps-media/table/confusion_matrix_table_3_13069f5b8396d1292f7f.table.json
+2024-05-08 17:29:47,807 DEBUG   SenderThread:18244 [sender.py:send():379] send: stats
+2024-05-08 17:29:48,043 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:29:48,075 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:29:48,076 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:29:48,289 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:29:53,325 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:29:58,381 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:30:03,057 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:30:03,072 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:30:03,072 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:30:04,199 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:30:04,827 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\config.yaml
+2024-05-08 17:30:09,378 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:30:14,443 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:30:17,816 DEBUG   SenderThread:18244 [sender.py:send():379] send: stats
+2024-05-08 17:30:18,079 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:30:18,088 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:30:18,089 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:30:20,315 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:30:25,356 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:30:30,416 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:30:33,094 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:30:33,094 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:30:33,094 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:30:36,334 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:30:41,370 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:30:46,415 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:30:47,830 DEBUG   SenderThread:18244 [sender.py:send():379] send: stats
+2024-05-08 17:30:48,098 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:30:48,098 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:30:48,099 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:30:52,293 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:30:57,354 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:31:02,398 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:31:03,114 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:31:03,115 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:31:03,115 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:31:08,359 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:31:12,830 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 17:31:12,831 DEBUG   SenderThread:18244 [sender.py:send():379] send: history
+2024-05-08 17:31:12,831 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 17:31:12,832 INFO    SenderThread:18244 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 17:31:12,832 DEBUG   SenderThread:18244 [sender.py:send():379] send: config
+2024-05-08 17:31:13,359 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: log_artifact
+2024-05-08 17:31:13,359 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: log_artifact
+2024-05-08 17:31:13,372 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 17:31:13,583 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\wandb-summary.json
+2024-05-08 17:31:13,583 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\media\table\confusion_matrix_table_4_2df1f2e6b2bb92dc7e81.table.json
+2024-05-08 17:31:13,584 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\media\table
+2024-05-08 17:31:13,933 INFO    wandb-upload_1:18244 [upload_job.py:push():131] Uploaded file C:\Users\tian_\AppData\Local\Temp\tmpu9463rxrwandb\jtl3470s-media/table/confusion_matrix_table_4_2df1f2e6b2bb92dc7e81.table.json
+2024-05-08 17:31:14,248 INFO    wandb-upload_0:18244 [upload_job.py:push():89] Uploaded file C:\Users\tian_\AppData\Local\wandb\wandb\artifacts\staging\tmp_b640ayl
+2024-05-08 17:31:14,592 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\output.log
+2024-05-08 17:31:14,909 INFO    SenderThread:18244 [sender.py:send_request_log_artifact():1456] logged artifact run-r6ug24l1-confusion_matrix_table - {'id': 'QXJ0aWZhY3Q6ODI4MTEyODIx', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE3MjM0MTkwMg==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6ODI4MTExNzQ2', 'versionIndex': 2}}}
+2024-05-08 17:31:14,909 DEBUG   SenderThread:18244 [sender.py:send():379] send: files
+2024-05-08 17:31:14,909 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:31:14,909 INFO    SenderThread:18244 [sender.py:_save_file():1390] saving file media\table\confusion_matrix_table_4_2df1f2e6b2bb92dc7e81.table.json with policy now
+2024-05-08 17:31:15,362 INFO    wandb-upload_1:18244 [upload_job.py:push():131] Uploaded file C:\Users\tian_\AppData\Local\Temp\tmpu9463rxrwandb\9ou8m929-media/table/confusion_matrix_table_4_2df1f2e6b2bb92dc7e81.table.json
+2024-05-08 17:31:17,839 DEBUG   SenderThread:18244 [sender.py:send():379] send: stats
+2024-05-08 17:31:18,125 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:31:18,126 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:31:18,126 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:31:20,333 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:31:25,395 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:31:30,423 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:31:33,128 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:31:33,128 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:31:33,131 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:31:36,341 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:31:41,404 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:31:41,874 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\config.yaml
+2024-05-08 17:31:46,589 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:31:47,847 DEBUG   SenderThread:18244 [sender.py:send():379] send: stats
+2024-05-08 17:31:48,126 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:31:48,126 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:31:48,127 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:31:52,370 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:31:57,433 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:32:02,475 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:32:03,137 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:32:03,138 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:32:03,138 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:32:08,352 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:32:13,377 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:32:17,853 DEBUG   SenderThread:18244 [sender.py:send():379] send: stats
+2024-05-08 17:32:18,153 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:32:18,154 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:32:18,154 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:32:19,297 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:32:24,343 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:32:29,404 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:32:33,166 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:32:33,166 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:32:33,167 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:32:35,400 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:32:40,426 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:32:41,693 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 17:32:41,694 DEBUG   SenderThread:18244 [sender.py:send():379] send: history
+2024-05-08 17:32:41,695 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 17:32:41,696 INFO    SenderThread:18244 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 17:32:41,696 DEBUG   SenderThread:18244 [sender.py:send():379] send: config
+2024-05-08 17:32:42,157 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: log_artifact
+2024-05-08 17:32:42,158 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: log_artifact
+2024-05-08 17:32:42,169 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 17:32:42,553 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\wandb-summary.json
+2024-05-08 17:32:42,553 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\media\table\confusion_matrix_table_5_27d6030442367c405085.table.json
+2024-05-08 17:32:42,553 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\media\table
+2024-05-08 17:32:42,903 INFO    wandb-upload_1:18244 [upload_job.py:push():131] Uploaded file C:\Users\tian_\AppData\Local\Temp\tmpu9463rxrwandb\zod32zkm-media/table/confusion_matrix_table_5_27d6030442367c405085.table.json
+2024-05-08 17:32:43,432 INFO    wandb-upload_0:18244 [upload_job.py:push():89] Uploaded file C:\Users\tian_\AppData\Local\wandb\wandb\artifacts\staging\tmpthdh_t3k
+2024-05-08 17:32:44,130 INFO    SenderThread:18244 [sender.py:send_request_log_artifact():1456] logged artifact run-r6ug24l1-confusion_matrix_table - {'id': 'QXJ0aWZhY3Q6ODI4MTE0MjYz', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE3MjM0MTkwMg==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6ODI4MTEyODIx', 'versionIndex': 3}}}
+2024-05-08 17:32:44,130 DEBUG   SenderThread:18244 [sender.py:send():379] send: files
+2024-05-08 17:32:44,130 INFO    SenderThread:18244 [sender.py:_save_file():1390] saving file media\table\confusion_matrix_table_5_27d6030442367c405085.table.json with policy now
+2024-05-08 17:32:44,571 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\output.log
+2024-05-08 17:32:44,575 INFO    wandb-upload_1:18244 [upload_job.py:push():131] Uploaded file C:\Users\tian_\AppData\Local\Temp\tmpu9463rxrwandb\65jzbhw8-media/table/confusion_matrix_table_5_27d6030442367c405085.table.json
+2024-05-08 17:32:46,143 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:32:46,590 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\config.yaml
+2024-05-08 17:32:47,859 DEBUG   SenderThread:18244 [sender.py:send():379] send: stats
+2024-05-08 17:32:48,179 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:32:48,179 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:32:48,179 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:32:51,429 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:32:56,501 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:33:01,557 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:33:03,177 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:33:03,178 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:33:03,192 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:33:07,407 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:33:12,443 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:33:17,481 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:33:17,864 DEBUG   SenderThread:18244 [sender.py:send():379] send: stats
+2024-05-08 17:33:18,195 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:33:18,196 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:33:18,196 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:33:23,347 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:33:28,393 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:33:33,212 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:33:33,212 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:33:33,213 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:33:33,440 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:33:38,491 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:33:43,538 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:33:47,872 DEBUG   SenderThread:18244 [sender.py:send():379] send: stats
+2024-05-08 17:33:48,212 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:33:48,212 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:33:48,229 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:33:49,380 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:33:54,419 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:33:59,491 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:34:03,221 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:34:03,221 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:34:03,237 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:34:05,461 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:34:10,516 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:34:10,560 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 17:34:10,561 DEBUG   SenderThread:18244 [sender.py:send():379] send: history
+2024-05-08 17:34:10,562 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 17:34:10,562 INFO    SenderThread:18244 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 17:34:10,563 DEBUG   SenderThread:18244 [sender.py:send():379] send: config
+2024-05-08 17:34:11,036 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: log_artifact
+2024-05-08 17:34:11,037 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: log_artifact
+2024-05-08 17:34:11,048 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 17:34:11,473 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\wandb-summary.json
+2024-05-08 17:34:11,473 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\media\table\confusion_matrix_table_6_3121d8068b9b5693eab9.table.json
+2024-05-08 17:34:11,474 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\media\table
+2024-05-08 17:34:11,806 INFO    wandb-upload_1:18244 [upload_job.py:push():131] Uploaded file C:\Users\tian_\AppData\Local\Temp\tmpu9463rxrwandb\qrfyz6rx-media/table/confusion_matrix_table_6_3121d8068b9b5693eab9.table.json
+2024-05-08 17:34:11,833 INFO    wandb-upload_0:18244 [upload_job.py:push():89] Uploaded file C:\Users\tian_\AppData\Local\wandb\wandb\artifacts\staging\tmpn1ghfvbf
+2024-05-08 17:34:12,488 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\output.log
+2024-05-08 17:34:12,733 INFO    SenderThread:18244 [sender.py:send_request_log_artifact():1456] logged artifact run-r6ug24l1-confusion_matrix_table - {'id': 'QXJ0aWZhY3Q6ODI4MTE1Mjg5', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE3MjM0MTkwMg==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6ODI4MTE0MjYz', 'versionIndex': 4}}}
+2024-05-08 17:34:12,733 DEBUG   SenderThread:18244 [sender.py:send():379] send: files
+2024-05-08 17:34:12,734 INFO    SenderThread:18244 [sender.py:_save_file():1390] saving file media\table\confusion_matrix_table_6_3121d8068b9b5693eab9.table.json with policy now
+2024-05-08 17:34:13,191 INFO    wandb-upload_1:18244 [upload_job.py:push():131] Uploaded file C:\Users\tian_\AppData\Local\Temp\tmpu9463rxrwandb\ql53iz36-media/table/confusion_matrix_table_6_3121d8068b9b5693eab9.table.json
+2024-05-08 17:34:15,775 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:34:17,876 DEBUG   SenderThread:18244 [sender.py:send():379] send: stats
+2024-05-08 17:34:18,225 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:34:18,225 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:34:18,241 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:34:21,436 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:34:22,597 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\config.yaml
+2024-05-08 17:34:26,647 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:34:31,695 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:34:33,237 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:34:33,237 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:34:33,253 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:34:37,434 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:34:42,473 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:34:47,505 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:34:47,888 DEBUG   SenderThread:18244 [sender.py:send():379] send: stats
+2024-05-08 17:34:48,241 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:34:48,242 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:34:48,254 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:34:52,673 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:34:57,715 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:35:02,767 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:35:03,255 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:35:03,256 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:35:03,256 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:35:08,469 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:35:13,526 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:35:17,894 DEBUG   SenderThread:18244 [sender.py:send():379] send: stats
+2024-05-08 17:35:18,259 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:35:18,260 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:35:18,260 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:35:19,399 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:35:24,461 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:35:29,491 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:35:33,277 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:35:33,278 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:35:33,278 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:35:35,424 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:35:40,147 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 17:35:40,149 DEBUG   SenderThread:18244 [sender.py:send():379] send: history
+2024-05-08 17:35:40,149 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 17:35:40,150 INFO    SenderThread:18244 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 17:35:40,150 DEBUG   SenderThread:18244 [sender.py:send():379] send: config
+2024-05-08 17:35:40,441 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\wandb-summary.json
+2024-05-08 17:35:40,633 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: log_artifact
+2024-05-08 17:35:40,633 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: log_artifact
+2024-05-08 17:35:40,656 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 17:35:41,419 INFO    wandb-upload_0:18244 [upload_job.py:push():89] Uploaded file C:\Users\tian_\AppData\Local\wandb\wandb\artifacts\staging\tmpb_xodfco
+2024-05-08 17:35:41,453 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\media\table\confusion_matrix_table_7_19ec6c9e00dee5f397a3.table.json
+2024-05-08 17:35:41,454 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\media\table
+2024-05-08 17:35:42,090 INFO    SenderThread:18244 [sender.py:send_request_log_artifact():1456] logged artifact run-r6ug24l1-confusion_matrix_table - {'id': 'QXJ0aWZhY3Q6ODI4MTE2MjY1', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE3MjM0MTkwMg==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6ODI4MTE1Mjg5', 'versionIndex': 5}}}
+2024-05-08 17:35:42,090 DEBUG   SenderThread:18244 [sender.py:send():379] send: files
+2024-05-08 17:35:42,090 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:35:42,090 INFO    SenderThread:18244 [sender.py:_save_file():1390] saving file media\table\confusion_matrix_table_7_19ec6c9e00dee5f397a3.table.json with policy now
+2024-05-08 17:35:42,398 INFO    wandb-upload_1:18244 [upload_job.py:push():131] Uploaded file C:\Users\tian_\AppData\Local\Temp\tmpu9463rxrwandb\tipnsi4x-media/table/confusion_matrix_table_7_19ec6c9e00dee5f397a3.table.json
+2024-05-08 17:35:42,468 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\output.log
+2024-05-08 17:35:42,850 INFO    wandb-upload_0:18244 [upload_job.py:push():131] Uploaded file C:\Users\tian_\AppData\Local\Temp\tmpu9463rxrwandb\6x0ng1ct-media/table/confusion_matrix_table_7_19ec6c9e00dee5f397a3.table.json
+2024-05-08 17:35:47,129 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:35:47,906 DEBUG   SenderThread:18244 [sender.py:send():379] send: stats
+2024-05-08 17:35:48,274 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:35:48,275 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:35:48,290 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:35:52,489 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:35:57,543 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:35:58,662 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\config.yaml
+2024-05-08 17:36:02,742 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:36:03,296 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:36:03,296 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:36:03,296 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:36:08,513 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:36:13,543 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:36:17,907 DEBUG   SenderThread:18244 [sender.py:send():379] send: stats
+2024-05-08 17:36:18,287 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:36:18,302 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:36:18,303 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:36:19,523 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:36:24,538 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:36:29,567 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:36:33,295 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:36:33,327 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:36:33,327 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:36:35,475 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:36:40,530 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:36:45,555 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:36:47,920 DEBUG   SenderThread:18244 [sender.py:send():379] send: stats
+2024-05-08 17:36:48,300 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:36:48,330 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:36:48,331 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:36:51,469 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:36:56,520 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:37:01,559 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:37:03,300 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:37:03,331 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:37:03,332 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:37:07,468 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:37:08,430 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 17:37:08,432 DEBUG   SenderThread:18244 [sender.py:send():379] send: history
+2024-05-08 17:37:08,432 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 17:37:08,433 INFO    SenderThread:18244 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 17:37:08,433 DEBUG   SenderThread:18244 [sender.py:send():379] send: config
+2024-05-08 17:37:08,962 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: log_artifact
+2024-05-08 17:37:08,962 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: log_artifact
+2024-05-08 17:37:08,973 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 17:37:09,378 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\wandb-summary.json
+2024-05-08 17:37:09,378 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\media\table\confusion_matrix_table_8_bfab9884c40cc0ef4ba2.table.json
+2024-05-08 17:37:09,378 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\media\table
+2024-05-08 17:37:09,728 INFO    wandb-upload_0:18244 [upload_job.py:push():131] Uploaded file C:\Users\tian_\AppData\Local\Temp\tmpu9463rxrwandb\utphbmvr-media/table/confusion_matrix_table_8_bfab9884c40cc0ef4ba2.table.json
+2024-05-08 17:37:09,860 INFO    wandb-upload_1:18244 [upload_job.py:push():89] Uploaded file C:\Users\tian_\AppData\Local\wandb\wandb\artifacts\staging\tmpdgfyohwc
+2024-05-08 17:37:10,386 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\output.log
+2024-05-08 17:37:10,554 INFO    SenderThread:18244 [sender.py:send_request_log_artifact():1456] logged artifact run-r6ug24l1-confusion_matrix_table - {'id': 'QXJ0aWZhY3Q6ODI4MTE3NDQ0', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE3MjM0MTkwMg==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6ODI4MTE2MjY1', 'versionIndex': 6}}}
+2024-05-08 17:37:10,554 DEBUG   SenderThread:18244 [sender.py:send():379] send: files
+2024-05-08 17:37:10,554 INFO    SenderThread:18244 [sender.py:_save_file():1390] saving file media\table\confusion_matrix_table_8_bfab9884c40cc0ef4ba2.table.json with policy now
+2024-05-08 17:37:10,989 INFO    wandb-upload_0:18244 [upload_job.py:push():131] Uploaded file C:\Users\tian_\AppData\Local\Temp\tmpu9463rxrwandb\i29dp17y-media/table/confusion_matrix_table_8_bfab9884c40cc0ef4ba2.table.json
+2024-05-08 17:37:12,570 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:37:17,609 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:37:17,927 DEBUG   SenderThread:18244 [sender.py:send():379] send: stats
+2024-05-08 17:37:18,311 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:37:18,325 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:37:18,326 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:37:23,541 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:37:28,592 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:37:33,319 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:37:33,335 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:37:33,335 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:37:34,515 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:37:35,640 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\config.yaml
+2024-05-08 17:37:39,713 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:37:44,743 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:37:47,941 DEBUG   SenderThread:18244 [sender.py:send():379] send: stats
+2024-05-08 17:37:48,322 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:37:48,338 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:37:48,339 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:37:50,519 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:37:55,587 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:38:00,639 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:38:03,333 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:38:03,349 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:38:03,350 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:38:06,555 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:38:11,604 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:38:16,674 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:38:17,956 DEBUG   SenderThread:18244 [sender.py:send():379] send: stats
+2024-05-08 17:38:18,348 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:38:18,364 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:38:18,365 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:38:22,629 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:38:27,652 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:38:32,695 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:38:33,363 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:38:33,379 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:38:33,380 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:38:38,543 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:38:38,544 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 17:38:38,545 DEBUG   SenderThread:18244 [sender.py:send():379] send: history
+2024-05-08 17:38:38,545 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 17:38:38,546 INFO    SenderThread:18244 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 17:38:38,546 DEBUG   SenderThread:18244 [sender.py:send():379] send: config
+2024-05-08 17:38:39,026 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: log_artifact
+2024-05-08 17:38:39,026 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: log_artifact
+2024-05-08 17:38:39,037 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 17:38:39,333 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\wandb-summary.json
+2024-05-08 17:38:39,333 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\media\table\confusion_matrix_table_9_2b7f7ffc7d59674e7793.table.json
+2024-05-08 17:38:39,334 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\media\table
+2024-05-08 17:38:39,677 INFO    wandb-upload_0:18244 [upload_job.py:push():131] Uploaded file C:\Users\tian_\AppData\Local\Temp\tmpu9463rxrwandb\vkouqqcl-media/table/confusion_matrix_table_9_2b7f7ffc7d59674e7793.table.json
+2024-05-08 17:38:39,901 INFO    wandb-upload_1:18244 [upload_job.py:push():89] Uploaded file C:\Users\tian_\AppData\Local\wandb\wandb\artifacts\staging\tmpntai7js6
+2024-05-08 17:38:40,346 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\output.log
+2024-05-08 17:38:40,565 INFO    SenderThread:18244 [sender.py:send_request_log_artifact():1456] logged artifact run-r6ug24l1-confusion_matrix_table - {'id': 'QXJ0aWZhY3Q6ODI4MTE4Mzc0', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE3MjM0MTkwMg==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6ODI4MTE3NDQ0', 'versionIndex': 7}}}
+2024-05-08 17:38:40,566 DEBUG   SenderThread:18244 [sender.py:send():379] send: files
+2024-05-08 17:38:40,566 INFO    SenderThread:18244 [sender.py:_save_file():1390] saving file media\table\confusion_matrix_table_9_2b7f7ffc7d59674e7793.table.json with policy now
+2024-05-08 17:38:41,014 INFO    wandb-upload_0:18244 [upload_job.py:push():131] Uploaded file C:\Users\tian_\AppData\Local\Temp\tmpu9463rxrwandb\urc6k8tp-media/table/confusion_matrix_table_9_2b7f7ffc7d59674e7793.table.json
+2024-05-08 17:38:43,579 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:38:47,958 DEBUG   SenderThread:18244 [sender.py:send():379] send: stats
+2024-05-08 17:38:48,369 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:38:48,385 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:38:48,386 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:38:49,522 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:38:54,589 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:38:59,638 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:39:03,381 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:39:03,397 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:39:03,398 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:39:05,614 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:39:10,662 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:39:11,742 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\config.yaml
+2024-05-08 17:39:15,900 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:39:17,968 DEBUG   SenderThread:18244 [sender.py:send():379] send: stats
+2024-05-08 17:39:18,395 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:39:18,412 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:39:18,412 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:39:21,602 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:39:26,639 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:39:31,685 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:39:33,412 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:39:33,428 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:39:33,429 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:39:37,665 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:39:42,737 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:39:47,784 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:39:47,976 DEBUG   SenderThread:18244 [sender.py:send():379] send: stats
+2024-05-08 17:39:48,421 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:39:48,455 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:39:48,455 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:39:53,684 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:39:58,729 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:40:03,424 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:40:03,455 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:40:03,456 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:40:04,687 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:40:07,273 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 17:40:07,274 DEBUG   SenderThread:18244 [sender.py:send():379] send: history
+2024-05-08 17:40:07,274 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 17:40:07,275 INFO    SenderThread:18244 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 17:40:07,275 DEBUG   SenderThread:18244 [sender.py:send():379] send: config
+2024-05-08 17:40:07,340 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\wandb-summary.json
+2024-05-08 17:40:07,714 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: log_artifact
+2024-05-08 17:40:07,714 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: log_artifact
+2024-05-08 17:40:07,731 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-08 17:40:08,344 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\output.log
+2024-05-08 17:40:08,345 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\media\table\confusion_matrix_table_10_fc213d7487c1af64f54e.table.json
+2024-05-08 17:40:08,345 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\media\table
+2024-05-08 17:40:08,551 INFO    wandb-upload_1:18244 [upload_job.py:push():89] Uploaded file C:\Users\tian_\AppData\Local\wandb\wandb\artifacts\staging\tmp8a_b4mix
+2024-05-08 17:40:08,705 INFO    wandb-upload_0:18244 [upload_job.py:push():131] Uploaded file C:\Users\tian_\AppData\Local\Temp\tmpu9463rxrwandb\gc0rclzl-media/table/confusion_matrix_table_10_fc213d7487c1af64f54e.table.json
+2024-05-08 17:40:09,261 INFO    SenderThread:18244 [sender.py:send_request_log_artifact():1456] logged artifact run-r6ug24l1-confusion_matrix_table - {'id': 'QXJ0aWZhY3Q6ODI4MTE5Mjc2', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE3MjM0MTkwMg==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6ODI4MTE4Mzc0', 'versionIndex': 8}}}
+2024-05-08 17:40:09,261 DEBUG   SenderThread:18244 [sender.py:send():379] send: files
+2024-05-08 17:40:09,261 INFO    SenderThread:18244 [sender.py:_save_file():1390] saving file media\table\confusion_matrix_table_10_fc213d7487c1af64f54e.table.json with policy now
+2024-05-08 17:40:09,714 INFO    wandb-upload_1:18244 [upload_job.py:push():131] Uploaded file C:\Users\tian_\AppData\Local\Temp\tmpu9463rxrwandb\und7ezts-media/table/confusion_matrix_table_10_fc213d7487c1af64f54e.table.json
+2024-05-08 17:40:10,276 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:40:15,329 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:40:16,421 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\config.yaml
+2024-05-08 17:40:17,983 DEBUG   SenderThread:18244 [sender.py:send():379] send: stats
+2024-05-08 17:40:18,418 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:40:18,466 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-08 17:40:18,466 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: stop_status
+2024-05-08 17:40:20,675 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:40:25,722 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:40:30,320 DEBUG   SenderThread:18244 [sender.py:send():379] send: telemetry
+2024-05-08 17:40:30,321 DEBUG   SenderThread:18244 [sender.py:send():379] send: exit
+2024-05-08 17:40:30,321 INFO    SenderThread:18244 [sender.py:send_exit():586] handling exit code: 0
+2024-05-08 17:40:30,321 INFO    SenderThread:18244 [sender.py:send_exit():588] handling runtime: 912
+2024-05-08 17:40:30,321 INFO    SenderThread:18244 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 17:40:30,322 INFO    SenderThread:18244 [sender.py:send_exit():594] send defer
+2024-05-08 17:40:30,322 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: defer
+2024-05-08 17:40:30,322 INFO    HandlerThread:18244 [handler.py:handle_request_defer():172] handle defer: 0
+2024-05-08 17:40:30,322 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: defer
+2024-05-08 17:40:30,322 INFO    SenderThread:18244 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-05-08 17:40:30,322 INFO    SenderThread:18244 [sender.py:transition_state():614] send defer: 1
+2024-05-08 17:40:30,322 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: defer
+2024-05-08 17:40:30,322 INFO    HandlerThread:18244 [handler.py:handle_request_defer():172] handle defer: 1
+2024-05-08 17:40:30,322 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: defer
+2024-05-08 17:40:30,323 INFO    SenderThread:18244 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-05-08 17:40:30,323 INFO    SenderThread:18244 [sender.py:transition_state():614] send defer: 2
+2024-05-08 17:40:30,323 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: defer
+2024-05-08 17:40:30,323 INFO    HandlerThread:18244 [handler.py:handle_request_defer():172] handle defer: 2
+2024-05-08 17:40:30,323 INFO    HandlerThread:18244 [system_monitor.py:finish():203] Stopping system monitor
+2024-05-08 17:40:30,323 DEBUG   SystemMonitor:18244 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-05-08 17:40:30,330 DEBUG   SystemMonitor:18244 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-05-08 17:40:30,330 INFO    HandlerThread:18244 [interfaces.py:finish():202] Joined cpu monitor
+2024-05-08 17:40:30,331 INFO    HandlerThread:18244 [interfaces.py:finish():202] Joined disk monitor
+2024-05-08 17:40:30,378 INFO    HandlerThread:18244 [interfaces.py:finish():202] Joined gpu monitor
+2024-05-08 17:40:30,378 INFO    HandlerThread:18244 [interfaces.py:finish():202] Joined memory monitor
+2024-05-08 17:40:30,378 INFO    HandlerThread:18244 [interfaces.py:finish():202] Joined network monitor
+2024-05-08 17:40:30,379 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: defer
+2024-05-08 17:40:30,379 INFO    SenderThread:18244 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-05-08 17:40:30,379 INFO    SenderThread:18244 [sender.py:transition_state():614] send defer: 3
+2024-05-08 17:40:30,379 DEBUG   SenderThread:18244 [sender.py:send():379] send: stats
+2024-05-08 17:40:30,379 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: defer
+2024-05-08 17:40:30,380 INFO    HandlerThread:18244 [handler.py:handle_request_defer():172] handle defer: 3
+2024-05-08 17:40:30,380 DEBUG   SenderThread:18244 [sender.py:send():379] send: history
+2024-05-08 17:40:30,380 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: summary_record
+2024-05-08 17:40:30,381 INFO    SenderThread:18244 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 17:40:30,381 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: defer
+2024-05-08 17:40:30,381 INFO    SenderThread:18244 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-05-08 17:40:30,381 INFO    SenderThread:18244 [sender.py:transition_state():614] send defer: 4
+2024-05-08 17:40:30,382 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: defer
+2024-05-08 17:40:30,382 INFO    HandlerThread:18244 [handler.py:handle_request_defer():172] handle defer: 4
+2024-05-08 17:40:30,382 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: defer
+2024-05-08 17:40:30,382 INFO    SenderThread:18244 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-05-08 17:40:30,382 INFO    SenderThread:18244 [sender.py:transition_state():614] send defer: 5
+2024-05-08 17:40:30,382 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: defer
+2024-05-08 17:40:30,382 INFO    HandlerThread:18244 [handler.py:handle_request_defer():172] handle defer: 5
+2024-05-08 17:40:30,383 DEBUG   SenderThread:18244 [sender.py:send():379] send: summary
+2024-05-08 17:40:30,383 INFO    SenderThread:18244 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-08 17:40:30,383 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: defer
+2024-05-08 17:40:30,383 INFO    SenderThread:18244 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-05-08 17:40:30,383 INFO    SenderThread:18244 [sender.py:transition_state():614] send defer: 6
+2024-05-08 17:40:30,384 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: defer
+2024-05-08 17:40:30,384 INFO    HandlerThread:18244 [handler.py:handle_request_defer():172] handle defer: 6
+2024-05-08 17:40:30,384 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: defer
+2024-05-08 17:40:30,384 INFO    SenderThread:18244 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-05-08 17:40:30,386 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: status_report
+2024-05-08 17:40:30,557 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\wandb-summary.json
+2024-05-08 17:40:30,581 INFO    SenderThread:18244 [sender.py:transition_state():614] send defer: 7
+2024-05-08 17:40:30,581 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: defer
+2024-05-08 17:40:30,582 INFO    HandlerThread:18244 [handler.py:handle_request_defer():172] handle defer: 7
+2024-05-08 17:40:30,582 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: defer
+2024-05-08 17:40:30,582 INFO    SenderThread:18244 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-05-08 17:40:31,335 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-08 17:40:31,572 INFO    Thread-78 :18244 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\config.yaml
+2024-05-08 17:40:32,313 INFO    SenderThread:18244 [sender.py:transition_state():614] send defer: 8
+2024-05-08 17:40:32,313 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: poll_exit
+2024-05-08 17:40:32,313 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: defer
+2024-05-08 17:40:32,314 INFO    HandlerThread:18244 [handler.py:handle_request_defer():172] handle defer: 8
+2024-05-08 17:40:32,314 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: defer
+2024-05-08 17:40:32,314 INFO    SenderThread:18244 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-05-08 17:40:32,314 INFO    SenderThread:18244 [job_builder.py:build():318] Attempting to build job artifact
+2024-05-08 17:40:32,315 INFO    SenderThread:18244 [job_builder.py:_get_source_type():466] no source found
+2024-05-08 17:40:32,315 INFO    SenderThread:18244 [sender.py:transition_state():614] send defer: 9
+2024-05-08 17:40:32,316 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: defer
+2024-05-08 17:40:32,316 INFO    HandlerThread:18244 [handler.py:handle_request_defer():172] handle defer: 9
+2024-05-08 17:40:32,316 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: defer
+2024-05-08 17:40:32,316 INFO    SenderThread:18244 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-05-08 17:40:32,316 INFO    SenderThread:18244 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-05-08 17:40:32,346 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-08 17:40:32,583 INFO    SenderThread:18244 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\output.log
+2024-05-08 17:40:32,583 INFO    SenderThread:18244 [dir_watcher.py:finish():388] scan: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files
+2024-05-08 17:40:32,584 INFO    SenderThread:18244 [dir_watcher.py:finish():402] scan save: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\conda-environment.yaml conda-environment.yaml
+2024-05-08 17:40:32,584 INFO    SenderThread:18244 [dir_watcher.py:finish():402] scan save: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\config.yaml config.yaml
+2024-05-08 17:40:32,584 INFO    SenderThread:18244 [dir_watcher.py:finish():402] scan save: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\output.log output.log
+2024-05-08 17:40:32,585 INFO    SenderThread:18244 [dir_watcher.py:finish():402] scan save: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\requirements.txt requirements.txt
+2024-05-08 17:40:32,587 INFO    SenderThread:18244 [dir_watcher.py:finish():402] scan save: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\wandb-metadata.json wandb-metadata.json
+2024-05-08 17:40:32,587 INFO    SenderThread:18244 [dir_watcher.py:finish():402] scan save: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\wandb-summary.json wandb-summary.json
+2024-05-08 17:40:32,590 INFO    SenderThread:18244 [dir_watcher.py:finish():402] scan save: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\media\table\confusion_matrix_table_10_fc213d7487c1af64f54e.table.json media/table/confusion_matrix_table_10_fc213d7487c1af64f54e.table.json
+2024-05-08 17:40:32,590 INFO    SenderThread:18244 [dir_watcher.py:finish():402] scan save: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\media\table\confusion_matrix_table_1_5f855905de0434faa562.table.json media/table/confusion_matrix_table_1_5f855905de0434faa562.table.json
+2024-05-08 17:40:32,590 INFO    SenderThread:18244 [dir_watcher.py:finish():402] scan save: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\media\table\confusion_matrix_table_2_e3fb1294fe8daee83cf8.table.json media/table/confusion_matrix_table_2_e3fb1294fe8daee83cf8.table.json
+2024-05-08 17:40:32,590 INFO    SenderThread:18244 [dir_watcher.py:finish():402] scan save: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\media\table\confusion_matrix_table_3_13069f5b8396d1292f7f.table.json media/table/confusion_matrix_table_3_13069f5b8396d1292f7f.table.json
+2024-05-08 17:40:32,590 INFO    SenderThread:18244 [dir_watcher.py:finish():402] scan save: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\media\table\confusion_matrix_table_4_2df1f2e6b2bb92dc7e81.table.json media/table/confusion_matrix_table_4_2df1f2e6b2bb92dc7e81.table.json
+2024-05-08 17:40:32,591 INFO    SenderThread:18244 [dir_watcher.py:finish():402] scan save: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\media\table\confusion_matrix_table_5_27d6030442367c405085.table.json media/table/confusion_matrix_table_5_27d6030442367c405085.table.json
+2024-05-08 17:40:32,591 INFO    SenderThread:18244 [dir_watcher.py:finish():402] scan save: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\media\table\confusion_matrix_table_6_3121d8068b9b5693eab9.table.json media/table/confusion_matrix_table_6_3121d8068b9b5693eab9.table.json
+2024-05-08 17:40:32,591 INFO    SenderThread:18244 [dir_watcher.py:finish():402] scan save: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\media\table\confusion_matrix_table_7_19ec6c9e00dee5f397a3.table.json media/table/confusion_matrix_table_7_19ec6c9e00dee5f397a3.table.json
+2024-05-08 17:40:32,591 INFO    SenderThread:18244 [dir_watcher.py:finish():402] scan save: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\media\table\confusion_matrix_table_8_bfab9884c40cc0ef4ba2.table.json media/table/confusion_matrix_table_8_bfab9884c40cc0ef4ba2.table.json
+2024-05-08 17:40:32,591 INFO    SenderThread:18244 [dir_watcher.py:finish():402] scan save: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\media\table\confusion_matrix_table_9_2b7f7ffc7d59674e7793.table.json media/table/confusion_matrix_table_9_2b7f7ffc7d59674e7793.table.json
+2024-05-08 17:40:32,591 INFO    SenderThread:18244 [sender.py:transition_state():614] send defer: 10
+2024-05-08 17:40:32,591 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: poll_exit
+2024-05-08 17:40:32,591 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: defer
+2024-05-08 17:40:32,591 INFO    HandlerThread:18244 [handler.py:handle_request_defer():172] handle defer: 10
+2024-05-08 17:40:32,592 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: defer
+2024-05-08 17:40:32,592 INFO    SenderThread:18244 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-05-08 17:40:32,592 INFO    SenderThread:18244 [file_pusher.py:finish():172] shutting down file pusher
+2024-05-08 17:40:32,906 INFO    wandb-upload_0:18244 [upload_job.py:push():131] Uploaded file c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\config.yaml
+2024-05-08 17:40:32,929 INFO    wandb-upload_1:18244 [upload_job.py:push():131] Uploaded file c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\output.log
+2024-05-08 17:40:33,265 INFO    wandb-upload_2:18244 [upload_job.py:push():131] Uploaded file c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\requirements.txt
+2024-05-08 17:40:33,353 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-08 17:40:33,353 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: poll_exit
+2024-05-08 17:40:33,384 INFO    wandb-upload_3:18244 [upload_job.py:push():131] Uploaded file c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\files\wandb-summary.json
+2024-05-08 17:40:33,600 INFO    Thread-77 (_thread_body):18244 [sender.py:transition_state():614] send defer: 11
+2024-05-08 17:40:33,600 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: defer
+2024-05-08 17:40:33,600 INFO    HandlerThread:18244 [handler.py:handle_request_defer():172] handle defer: 11
+2024-05-08 17:40:33,600 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: defer
+2024-05-08 17:40:33,600 INFO    SenderThread:18244 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-05-08 17:40:33,600 INFO    SenderThread:18244 [file_pusher.py:join():178] waiting for file pusher
+2024-05-08 17:40:33,606 INFO    SenderThread:18244 [sender.py:transition_state():614] send defer: 12
+2024-05-08 17:40:33,606 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: defer
+2024-05-08 17:40:33,606 INFO    HandlerThread:18244 [handler.py:handle_request_defer():172] handle defer: 12
+2024-05-08 17:40:33,606 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: defer
+2024-05-08 17:40:33,606 INFO    SenderThread:18244 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-05-08 17:40:33,606 INFO    SenderThread:18244 [file_stream.py:finish():614] file stream finish called
+2024-05-08 17:40:33,961 INFO    SenderThread:18244 [file_stream.py:finish():618] file stream finish is done
+2024-05-08 17:40:33,961 INFO    SenderThread:18244 [sender.py:transition_state():614] send defer: 13
+2024-05-08 17:40:33,961 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: defer
+2024-05-08 17:40:33,961 INFO    HandlerThread:18244 [handler.py:handle_request_defer():172] handle defer: 13
+2024-05-08 17:40:33,961 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: defer
+2024-05-08 17:40:33,961 INFO    SenderThread:18244 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-05-08 17:40:33,962 INFO    SenderThread:18244 [sender.py:transition_state():614] send defer: 14
+2024-05-08 17:40:33,962 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: defer
+2024-05-08 17:40:33,962 DEBUG   SenderThread:18244 [sender.py:send():379] send: final
+2024-05-08 17:40:33,962 INFO    HandlerThread:18244 [handler.py:handle_request_defer():172] handle defer: 14
+2024-05-08 17:40:33,962 DEBUG   SenderThread:18244 [sender.py:send():379] send: footer
+2024-05-08 17:40:33,962 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: defer
+2024-05-08 17:40:33,962 INFO    SenderThread:18244 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-05-08 17:40:33,963 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-08 17:40:33,963 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: poll_exit
+2024-05-08 17:40:33,964 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-08 17:40:33,965 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: server_info
+2024-05-08 17:40:33,965 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: get_summary
+2024-05-08 17:40:33,965 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: sampled_history
+2024-05-08 17:40:33,965 DEBUG   SenderThread:18244 [sender.py:send_request():406] send_request: server_info
+2024-05-08 17:40:34,086 DEBUG   HandlerThread:18244 [handler.py:handle_request():146] handle_request: shutdown
+2024-05-08 17:40:34,086 INFO    HandlerThread:18244 [handler.py:finish():866] shutting down handler
+2024-05-08 17:40:34,975 INFO    WriterThread:18244 [datastore.py:close():296] close: c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_172510-r6ug24l1\run-r6ug24l1.wandb
+2024-05-08 17:40:35,098 INFO    SenderThread:18244 [sender.py:finish():1546] shutting down sender
+2024-05-08 17:40:35,098 INFO    SenderThread:18244 [file_pusher.py:finish():172] shutting down file pusher
+2024-05-08 17:40:35,098 INFO    SenderThread:18244 [file_pusher.py:join():178] waiting for file pusher

@@ -1,0 +1,15 @@
+
+Epoch: 1  Train Loss: 0.5768  Train Acc: 75.8964  Valid Loss: 0.5692  Valid Acc: 81.5657
+Epoch: 2  Train Loss: 0.2036  Train Acc: 92.6295  Valid Loss: 0.4721  Valid Acc: 83.8384
+Epoch: 3  Train Loss: 0.1085  Train Acc: 95.9495  Valid Loss: 0.4713  Valid Acc: 85.3535
+Epoch: 4  Train Loss: 0.0873  Train Acc: 96.9456  Valid Loss: 0.4512  Valid Acc: 87.1212
+Epoch: 5  Train Loss: 0.0465  Train Acc: 97.9416  Valid Loss: 0.4469  Valid Acc: 86.6162
+Epoch: 6  Train Loss: 0.0087  Train Acc: 99.7344  Valid Loss: 0.6820  Valid Acc: 88.3838
+Epoch: 7  Train Loss: 0.0109  Train Acc: 99.6016  Valid Loss: 0.6088  Valid Acc: 84.5960
+Epoch: 8  Train Loss: 0.0257  Train Acc: 98.9376  Valid Loss: 0.5744  Valid Acc: 84.8485
+Epoch: 9  Train Loss: 0.0122  Train Acc: 99.6016  Valid Loss: 0.7022  Valid Acc: 83.8384
+Epoch: 10  Train Loss: 0.0039  Train Acc: 99.8672  Valid Loss: 0.7176  Valid Acc: 86.8687
+Total samples: 1506
+Batch size: 32
+Number of batches per epoch: 48
+[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.login() after wandb.init() has no effect.

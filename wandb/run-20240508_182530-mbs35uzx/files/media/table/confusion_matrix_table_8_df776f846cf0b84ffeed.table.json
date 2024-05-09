@@ -1,0 +1,1 @@
+{"columns": ["Actual", "Predicted", "nPredictions"], "data": [["Covid", "Covid", 130.0], ["Covid", "Normal", 4.0], ["Covid", "Viral Pneumonia", 22.0], ["Normal", "Covid", 7.0], ["Normal", "Normal", 9.0], ["Normal", "Viral Pneumonia", 104.0], ["Viral Pneumonia", "Covid", 10.0], ["Viral Pneumonia", "Normal", 2.0], ["Viral Pneumonia", "Viral Pneumonia", 108.0]]}

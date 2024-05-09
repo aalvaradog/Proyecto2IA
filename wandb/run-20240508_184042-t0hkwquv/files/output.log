@@ -1,0 +1,10 @@
+
+Epoch: 1  Train Loss: 0.5490  Train Acc: 75.0332  Valid Loss: 0.5261  Valid Acc: 79.0404
+Epoch: 2  Train Loss: 0.2165  Train Acc: 91.7663  Valid Loss: 0.5705  Valid Acc: 87.3737
+Epoch: 3  Train Loss: 0.1613  Train Acc: 93.5591  Valid Loss: 0.5775  Valid Acc: 84.8485
+Epoch: 4  Train Loss: 0.1004  Train Acc: 96.2815  Valid Loss: 0.6159  Valid Acc: 83.0808
+Epoch: 5  Train Loss: 0.0528  Train Acc: 98.0744  Valid Loss: 0.6990  Valid Acc: 86.8687
+Epoch: 6  Train Loss: 0.0478  Train Acc: 98.1408  Valid Loss: 0.6842  Valid Acc: 82.8283
+Epoch: 7  Train Loss: 0.0217  Train Acc: 99.2032  Valid Loss: 1.0134  Valid Acc: 86.8687
+Epoch: 8  Train Loss: 0.0767  Train Acc: 97.2112  Valid Loss: 0.6769  Valid Acc: 83.8384
+Epoch: 9  Train Loss: 0.0166  Train Acc: 99.3360  Valid Loss: 0.8481  Valid Acc: 86.6162

@@ -1,0 +1,171 @@
+2024-05-08 16:02:54,076 INFO    MainThread:8600 [wandb_setup.py:_flush():76] Current SDK version is 0.16.5
+2024-05-08 16:02:54,076 INFO    MainThread:8600 [wandb_setup.py:_flush():76] Configure stats pid to 8600
+2024-05-08 16:02:54,076 INFO    MainThread:8600 [wandb_setup.py:_flush():76] Loading settings from C:\Users\tian_\.config\wandb\settings
+2024-05-08 16:02:54,076 INFO    MainThread:8600 [wandb_setup.py:_flush():76] Loading settings from c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\settings
+2024-05-08 16:02:54,076 INFO    MainThread:8600 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'api_key': '***REDACTED***'}
+2024-05-08 16:02:54,076 INFO    MainThread:8600 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-05-08 16:02:54,076 INFO    MainThread:8600 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-05-08 16:02:54,076 INFO    MainThread:8600 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-05-08 16:02:54,076 INFO    MainThread:8600 [wandb_init.py:_log_setup():527] Logging user logs to c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_160254-wc0iu8wr\logs\debug.log
+2024-05-08 16:02:54,077 INFO    MainThread:8600 [wandb_init.py:_log_setup():528] Logging internal logs to c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_160254-wc0iu8wr\logs\debug-internal.log
+2024-05-08 16:02:54,077 INFO    MainThread:8600 [wandb_init.py:_jupyter_setup():473] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x0000022191461D90>
+2024-05-08 16:02:54,077 INFO    MainThread:8600 [wandb_init.py:init():567] calling init triggers
+2024-05-08 16:02:54,077 INFO    MainThread:8600 [wandb_init.py:init():574] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.0005, 'epochs': 10}
+2024-05-08 16:02:54,077 INFO    MainThread:8600 [wandb_init.py:init():592] re-initializing run, found existing run on stack: 7v9s2nzz
+2024-05-08 16:02:54,078 INFO    MainThread:8600 [wandb_run.py:_finish():2052] finishing run sebas1498/Proyecto2/7v9s2nzz
+2024-05-08 16:02:54,079 INFO    MainThread:8600 [wandb_run.py:_atexit_cleanup():2292] got exitcode: 0
+2024-05-08 16:02:54,079 INFO    MainThread:8600 [wandb_run.py:_restore():2275] restore
+2024-05-08 16:02:54,079 INFO    MainThread:8600 [wandb_run.py:_restore():2281] restore done
+2024-05-08 16:02:58,768 INFO    MainThread:8600 [wandb_run.py:_footer_history_summary_info():3920] rendering history
+2024-05-08 16:02:58,768 INFO    MainThread:8600 [wandb_run.py:_footer_history_summary_info():3952] rendering summary
+2024-05-08 16:02:58,773 INFO    MainThread:8600 [wandb_run.py:_footer_sync_info():3879] logging synced files
+2024-05-08 16:02:59,289 INFO    MainThread:8600 [wandb_init.py:init():617] starting backend
+2024-05-08 16:02:59,289 INFO    MainThread:8600 [wandb_init.py:init():621] setting up manager
+2024-05-08 16:02:59,293 INFO    MainThread:8600 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2024-05-08 16:02:59,294 INFO    MainThread:8600 [wandb_init.py:init():629] backend started and connected
+2024-05-08 16:02:59,297 INFO    MainThread:8600 [wandb_run.py:_label_probe_notebook():1299] probe notebook
+2024-05-08 16:02:59,297 INFO    MainThread:8600 [wandb_run.py:_label_probe_notebook():1309] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-05-08 16:02:59,298 INFO    MainThread:8600 [wandb_init.py:init():721] updated telemetry
+2024-05-08 16:02:59,298 INFO    MainThread:8600 [wandb_init.py:init():754] communicating run to backend with 90.0 second timeout
+2024-05-08 16:03:00,436 INFO    MainThread:8600 [wandb_run.py:_on_init():2344] communicating current version
+2024-05-08 16:03:01,212 INFO    MainThread:8600 [wandb_run.py:_on_init():2353] got version response upgrade_message: "wandb version 0.17.0 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-05-08 16:03:01,212 INFO    MainThread:8600 [wandb_init.py:init():805] starting run threads in backend
+2024-05-08 16:03:01,408 INFO    MainThread:8600 [wandb_run.py:_console_start():2323] atexit reg
+2024-05-08 16:03:01,408 INFO    MainThread:8600 [wandb_run.py:_redirect():2178] redirect: wrap_raw
+2024-05-08 16:03:01,408 INFO    MainThread:8600 [wandb_run.py:_redirect():2243] Wrapping output streams.
+2024-05-08 16:03:01,408 INFO    MainThread:8600 [wandb_run.py:_redirect():2268] Redirects installed.
+2024-05-08 16:03:01,408 INFO    MainThread:8600 [wandb_init.py:init():848] run started, returning control to user process
+2024-05-08 16:03:01,531 INFO    MainThread:8600 [wandb_watch.py:watch():51] Watching
+2024-05-08 16:04:27,137 INFO    MainThread:8600 [wandb_run.py:_config_callback():1347] config_cb ('_wandb', 'visualize', 'confusion_matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'confusion_matrix_table'}], 'fields': []}]}]}}} None
+2024-05-08 16:05:53,088 INFO    MainThread:8600 [wandb_run.py:_config_callback():1347] config_cb ('_wandb', 'visualize', 'confusion_matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'confusion_matrix_table'}], 'fields': []}]}]}}} None
+2024-05-08 16:07:20,169 INFO    MainThread:8600 [wandb_run.py:_config_callback():1347] config_cb ('_wandb', 'visualize', 'confusion_matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'confusion_matrix_table'}], 'fields': []}]}]}}} None
+2024-05-08 16:08:46,297 INFO    MainThread:8600 [wandb_run.py:_config_callback():1347] config_cb ('_wandb', 'visualize', 'confusion_matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'confusion_matrix_table'}], 'fields': []}]}]}}} None
+2024-05-08 16:10:15,596 INFO    MainThread:8600 [wandb_run.py:_config_callback():1347] config_cb ('_wandb', 'visualize', 'confusion_matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'confusion_matrix_table'}], 'fields': []}]}]}}} None
+2024-05-08 16:11:43,607 INFO    MainThread:8600 [wandb_run.py:_config_callback():1347] config_cb ('_wandb', 'visualize', 'confusion_matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'confusion_matrix_table'}], 'fields': []}]}]}}} None
+2024-05-08 16:13:20,480 INFO    MainThread:8600 [wandb_run.py:_config_callback():1347] config_cb ('_wandb', 'visualize', 'confusion_matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'confusion_matrix_table'}], 'fields': []}]}]}}} None
+2024-05-08 16:14:45,946 INFO    MainThread:8600 [wandb_run.py:_config_callback():1347] config_cb ('_wandb', 'visualize', 'confusion_matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'confusion_matrix_table'}], 'fields': []}]}]}}} None
+2024-05-08 16:16:12,177 INFO    MainThread:8600 [wandb_run.py:_config_callback():1347] config_cb ('_wandb', 'visualize', 'confusion_matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'confusion_matrix_table'}], 'fields': []}]}]}}} None
+2024-05-08 16:17:33,217 INFO    MainThread:8600 [wandb_run.py:_config_callback():1347] config_cb ('_wandb', 'visualize', 'confusion_matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'confusion_matrix_table'}], 'fields': []}]}]}}} None
+2024-05-08 16:17:33,732 INFO    MainThread:8600 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-05-08 16:17:33,732 INFO    MainThread:8600 [wandb_init.py:_pause_backend():438] pausing backend
+2024-05-08 16:18:42,567 INFO    MainThread:8600 [wandb_init.py:_resume_backend():443] resuming backend
+2024-05-08 16:18:43,386 INFO    MainThread:8600 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-05-08 16:18:43,386 INFO    MainThread:8600 [wandb_init.py:_pause_backend():438] pausing backend
+2024-05-08 16:23:13,321 INFO    MainThread:8600 [wandb_init.py:_resume_backend():443] resuming backend
+2024-05-08 16:23:13,325 INFO    MainThread:8600 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-05-08 16:23:13,325 INFO    MainThread:8600 [wandb_init.py:_pause_backend():438] pausing backend
+2024-05-08 16:23:20,816 INFO    MainThread:8600 [wandb_init.py:_resume_backend():443] resuming backend
+2024-05-08 16:23:20,820 INFO    MainThread:8600 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-05-08 16:23:20,820 INFO    MainThread:8600 [wandb_init.py:_pause_backend():438] pausing backend
+2024-05-08 16:32:53,423 INFO    MainThread:8600 [wandb_init.py:_resume_backend():443] resuming backend
+2024-05-08 16:32:54,261 INFO    MainThread:8600 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-05-08 16:32:54,261 INFO    MainThread:8600 [wandb_init.py:_pause_backend():438] pausing backend
+2024-05-08 16:36:18,405 INFO    MainThread:8600 [wandb_init.py:_resume_backend():443] resuming backend
+2024-05-08 16:36:18,406 INFO    MainThread:8600 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-05-08 16:36:18,406 INFO    MainThread:8600 [wandb_init.py:_pause_backend():438] pausing backend
+2024-05-08 16:36:20,731 INFO    MainThread:8600 [wandb_init.py:_resume_backend():443] resuming backend
+2024-05-08 16:36:20,734 INFO    MainThread:8600 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-05-08 16:36:20,735 INFO    MainThread:8600 [wandb_init.py:_pause_backend():438] pausing backend
+2024-05-08 16:36:23,723 INFO    MainThread:8600 [wandb_init.py:_resume_backend():443] resuming backend
+2024-05-08 16:36:23,725 INFO    MainThread:8600 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-05-08 16:36:23,725 INFO    MainThread:8600 [wandb_init.py:_pause_backend():438] pausing backend
+2024-05-08 16:36:25,442 INFO    MainThread:8600 [wandb_init.py:_resume_backend():443] resuming backend
+2024-05-08 16:36:25,445 INFO    MainThread:8600 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-05-08 16:36:25,445 INFO    MainThread:8600 [wandb_init.py:_pause_backend():438] pausing backend
+2024-05-08 16:36:27,847 INFO    MainThread:8600 [wandb_init.py:_resume_backend():443] resuming backend
+2024-05-08 16:36:27,849 INFO    MainThread:8600 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-05-08 16:36:27,849 INFO    MainThread:8600 [wandb_init.py:_pause_backend():438] pausing backend
+2024-05-08 16:36:35,709 INFO    MainThread:8600 [wandb_init.py:_resume_backend():443] resuming backend
+2024-05-08 16:36:35,736 INFO    MainThread:8600 [wandb_setup.py:_flush():76] Current SDK version is 0.16.5
+2024-05-08 16:36:35,736 INFO    MainThread:8600 [wandb_setup.py:_flush():76] Configure stats pid to 8600
+2024-05-08 16:36:35,736 INFO    MainThread:8600 [wandb_setup.py:_flush():76] Loading settings from C:\Users\tian_\.config\wandb\settings
+2024-05-08 16:36:35,736 INFO    MainThread:8600 [wandb_setup.py:_flush():76] Loading settings from c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\settings
+2024-05-08 16:36:35,736 INFO    MainThread:8600 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'api_key': '***REDACTED***'}
+2024-05-08 16:36:35,736 INFO    MainThread:8600 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-05-08 16:36:35,737 INFO    MainThread:8600 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-05-08 16:36:35,737 INFO    MainThread:8600 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-05-08 16:36:35,737 INFO    MainThread:8600 [wandb_init.py:_log_setup():527] Logging user logs to c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_163635-nl5mdpl5\logs\debug.log
+2024-05-08 16:36:35,737 INFO    MainThread:8600 [wandb_init.py:_log_setup():528] Logging internal logs to c:\Users\tian_\OneDrive\Documents\GitHub\Proyecto2IA\wandb\run-20240508_163635-nl5mdpl5\logs\debug-internal.log
+2024-05-08 16:36:35,737 INFO    MainThread:8600 [wandb_init.py:init():567] calling init triggers
+2024-05-08 16:36:35,737 INFO    MainThread:8600 [wandb_init.py:init():574] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.0005, 'epochs': 10}
+2024-05-08 16:36:35,737 INFO    MainThread:8600 [wandb_init.py:init():592] re-initializing run, found existing run on stack: wc0iu8wr
+2024-05-08 16:36:35,739 INFO    MainThread:8600 [wandb_run.py:_finish():2052] finishing run sebas1498/Proyecto2/wc0iu8wr
+2024-05-08 16:36:35,739 INFO    MainThread:8600 [jupyter.py:save_history():445] not saving jupyter history
+2024-05-08 16:36:35,740 INFO    MainThread:8600 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-05-08 16:36:35,740 INFO    MainThread:8600 [wandb_init.py:_jupyter_teardown():455] cleaning up jupyter logic
+2024-05-08 16:36:35,740 INFO    MainThread:8600 [wandb_run.py:_atexit_cleanup():2292] got exitcode: 0
+2024-05-08 16:36:35,740 INFO    MainThread:8600 [wandb_run.py:_restore():2275] restore
+2024-05-08 16:36:35,740 INFO    MainThread:8600 [wandb_run.py:_restore():2281] restore done
+2024-05-08 16:39:02,733 WARNING MsgRouterThr:8600 [router.py:message_loop():77] message_loop has been closed
+2024-05-08 16:39:02,995 INFO    MainThread:8600 [wandb_run.py:_restore():2275] restore
+2024-05-08 16:39:02,995 INFO    MainThread:8600 [wandb_run.py:_restore():2281] restore done
+2024-05-08 16:39:03,493 ERROR   MainThread:8600 [wandb_init.py:init():1215] error
+Traceback (most recent call last):
+  File "c:\Users\tian_\AppData\Local\anaconda3\envs\Pytorch_env\Lib\site-packages\wandb\sdk\wandb_run.py", line 2301, in _atexit_cleanup
+    self._on_finish()
+  File "c:\Users\tian_\AppData\Local\anaconda3\envs\Pytorch_env\Lib\site-packages\wandb\sdk\wandb_run.py", line 2548, in _on_finish
+    _ = exit_handle.wait(timeout=-1, on_progress=self._on_progress_exit)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\tian_\AppData\Local\anaconda3\envs\Pytorch_env\Lib\site-packages\wandb\sdk\lib\mailbox.py", line 298, in wait
+    on_probe(probe_handle)
+  File "c:\Users\tian_\AppData\Local\anaconda3\envs\Pytorch_env\Lib\site-packages\wandb\sdk\wandb_run.py", line 2512, in _on_probe_exit
+    result = handle.wait(timeout=0, release=False)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\tian_\AppData\Local\anaconda3\envs\Pytorch_env\Lib\site-packages\wandb\sdk\lib\mailbox.py", line 281, in wait
+    raise MailboxError("transport failed")
+wandb.sdk.lib.mailbox.MailboxError: transport failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\tian_\AppData\Local\anaconda3\envs\Pytorch_env\Lib\site-packages\wandb\sdk\wandb_init.py", line 1187, in init
+    run = wi.init()
+          ^^^^^^^^^
+  File "c:\Users\tian_\AppData\Local\anaconda3\envs\Pytorch_env\Lib\site-packages\wandb\sdk\wandb_init.py", line 602, in init
+    latest_run.finish()
+  File "c:\Users\tian_\AppData\Local\anaconda3\envs\Pytorch_env\Lib\site-packages\wandb\sdk\wandb_run.py", line 420, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\tian_\AppData\Local\anaconda3\envs\Pytorch_env\Lib\site-packages\wandb\sdk\wandb_run.py", line 361, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\tian_\AppData\Local\anaconda3\envs\Pytorch_env\Lib\site-packages\wandb\sdk\wandb_run.py", line 2043, in finish
+    return self._finish(exit_code, quiet)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\tian_\AppData\Local\anaconda3\envs\Pytorch_env\Lib\site-packages\wandb\sdk\wandb_run.py", line 2058, in _finish
+    self._atexit_cleanup(exit_code=exit_code)
+  File "c:\Users\tian_\AppData\Local\anaconda3\envs\Pytorch_env\Lib\site-packages\wandb\sdk\wandb_run.py", line 2312, in _atexit_cleanup
+    self._backend.cleanup()
+  File "c:\Users\tian_\AppData\Local\anaconda3\envs\Pytorch_env\Lib\site-packages\wandb\sdk\backend\backend.py", line 232, in cleanup
+    self.interface.join()
+  File "c:\Users\tian_\AppData\Local\anaconda3\envs\Pytorch_env\Lib\site-packages\wandb\sdk\interface\interface_shared.py", line 553, in join
+    super().join()
+  File "c:\Users\tian_\AppData\Local\anaconda3\envs\Pytorch_env\Lib\site-packages\wandb\sdk\interface\interface.py", line 724, in join
+    _ = self._communicate_shutdown()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\tian_\AppData\Local\anaconda3\envs\Pytorch_env\Lib\site-packages\wandb\sdk\interface\interface_shared.py", line 450, in _communicate_shutdown
+    _ = self._communicate(record)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\tian_\AppData\Local\anaconda3\envs\Pytorch_env\Lib\site-packages\wandb\sdk\interface\interface_shared.py", line 302, in _communicate
+    return self._communicate_async(rec, local=local).get(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\tian_\AppData\Local\anaconda3\envs\Pytorch_env\Lib\site-packages\wandb\sdk\interface\interface_sock.py", line 60, in _communicate_async
+    future = self._router.send_and_receive(rec, local=local)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\tian_\AppData\Local\anaconda3\envs\Pytorch_env\Lib\site-packages\wandb\sdk\interface\router.py", line 94, in send_and_receive
+    self._send_message(rec)
+  File "c:\Users\tian_\AppData\Local\anaconda3\envs\Pytorch_env\Lib\site-packages\wandb\sdk\interface\router_sock.py", line 36, in _send_message
+    self._sock_client.send_record_communicate(record)
+  File "c:\Users\tian_\AppData\Local\anaconda3\envs\Pytorch_env\Lib\site-packages\wandb\sdk\lib\sock_client.py", line 216, in send_record_communicate
+    self.send_server_request(server_req)
+  File "c:\Users\tian_\AppData\Local\anaconda3\envs\Pytorch_env\Lib\site-packages\wandb\sdk\lib\sock_client.py", line 155, in send_server_request
+    self._send_message(msg)
+  File "c:\Users\tian_\AppData\Local\anaconda3\envs\Pytorch_env\Lib\site-packages\wandb\sdk\lib\sock_client.py", line 152, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "c:\Users\tian_\AppData\Local\anaconda3\envs\Pytorch_env\Lib\site-packages\wandb\sdk\lib\sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
